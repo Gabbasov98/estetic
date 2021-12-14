@@ -1,0 +1,60 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 0px;
+}
+
+.btn-brown {
+    background: #C39F7B;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    transition: all .3s;
+    &:hover {
+        background: #A58668;
+    }
+}
+
+.text-druk {
+    font-family: "Druk Text Wide Cyr";
+}
+
+.input-filled {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.3658 1.5792L5.34832 11.5959L0.634155 6.88336L1.80916 5.70836L5.34832 9.23836L14.19 0.405029L15.365 1.58003L15.3658 1.5792Z' fill='%23C39F7B'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 22px center;
+    transition: all .0s;
+    padding-right: 60px;
+}
+
+.back-link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    color: #C89B6E;
+    display: flex;
+    align-items: center;
+    &:hover {
+        span {
+            color: #C89B6E;
+        }
+        path {
+            color: #C89B6E;
+        }
+    }
+    span {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .back-link {
+        font-size: 14px;
+        svg {
+            width: 20px;
+        }
+    }
+}
